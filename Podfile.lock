@@ -1,0 +1,24 @@
+PODS:
+  - Kingfisher (7.2.2)
+  - PKHUD (5.3.0)
+  - SwiftLint (0.47.1)
+
+DEPENDENCIES:
+  - Kingfisher (~> 7.2.2)
+  - PKHUD (~> 5.3.0)
+  - SwiftLint (~> 0.47.1)
+
+SPEC REPOS:
+  trunk:
+    - Kingfisher
+    - PKHUD
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Kingfisher: 184d4d1a8c36666e663caf8e08abe87898595c53
+  PKHUD: 98f3e4bc904b9c916f1c5bb6d765365b5357291b
+  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+
+PODFILE CHECKSUM: 41dea9fa5884628ae46545e5e8c76862fcb39e6f
+
+COCOAPODS: 1.11.3
