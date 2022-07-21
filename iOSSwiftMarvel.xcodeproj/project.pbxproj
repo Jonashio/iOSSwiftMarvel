@@ -17,6 +17,10 @@
 		A17ECFA928896A7500C2E303 /* iOSSwiftMarvelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFA828896A7500C2E303 /* iOSSwiftMarvelTests.swift */; };
 		A17ECFB328896A7500C2E303 /* iOSSwiftMarvelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFB228896A7500C2E303 /* iOSSwiftMarvelUITests.swift */; };
 		A17ECFB528896A7500C2E303 /* iOSSwiftMarvelUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFB428896A7500C2E303 /* iOSSwiftMarvelUITestsLaunchTests.swift */; };
+		A17ECFC92889A3D900C2E303 /* CharacterListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFC82889A3D900C2E303 /* CharacterListViewController.swift */; };
+		A17ECFCC2889A41700C2E303 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFCB2889A41700C2E303 /* CommonViewController.swift */; };
+		A17ECFCE2889AD0B00C2E303 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFCD2889AD0B00C2E303 /* CharacterListViewModel.swift */; };
+		A17ECFD02889ADA900C2E303 /* CharacterListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFCF2889ADA900C2E303 /* CharacterListDataSource.swift */; };
 		CCA057E7F8C60312C65878CF /* Pods_iOSSwiftMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E7E64AE440154C02F1C9555 /* Pods_iOSSwiftMarvel.framework */; };
 		E4592A70F7A4C39B112233C7 /* Pods_iOSSwiftMarvel_iOSSwiftMarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 192258EE631E6D4E2D930B94 /* Pods_iOSSwiftMarvel_iOSSwiftMarvelUITests.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +63,10 @@
 		A17ECFAE28896A7500C2E303 /* iOSSwiftMarvelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSSwiftMarvelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17ECFB228896A7500C2E303 /* iOSSwiftMarvelUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftMarvelUITests.swift; sourceTree = "<group>"; };
 		A17ECFB428896A7500C2E303 /* iOSSwiftMarvelUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSSwiftMarvelUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A17ECFC82889A3D900C2E303 /* CharacterListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewController.swift; sourceTree = "<group>"; };
+		A17ECFCB2889A41700C2E303 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
+		A17ECFCD2889AD0B00C2E303 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		A17ECFCF2889ADA900C2E303 /* CharacterListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDataSource.swift; sourceTree = "<group>"; };
 		CF03213D1C5B39FD706428F0 /* Pods-iOSSwiftMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwiftMarvel.release.xcconfig"; path = "Target Support Files/Pods-iOSSwiftMarvel/Pods-iOSSwiftMarvel.release.xcconfig"; sourceTree = "<group>"; };
 		DF727245405C4DB0AA79BC24 /* Pods_iOSSwiftMarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSwiftMarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -129,6 +137,8 @@
 		A17ECF9028896A7300C2E303 /* iOSSwiftMarvel */ = {
 			isa = PBXGroup;
 			children = (
+				A17ECFCA2889A3FB00C2E303 /* Common */,
+				A17ECFC22889A35000C2E303 /* Module */,
 				A17ECF9128896A7300C2E303 /* AppDelegate.swift */,
 				A17ECF9328896A7300C2E303 /* SceneDelegate.swift */,
 				A17ECF9528896A7300C2E303 /* ViewController.swift */,
@@ -155,6 +165,64 @@
 				A17ECFB428896A7500C2E303 /* iOSSwiftMarvelUITestsLaunchTests.swift */,
 			);
 			path = iOSSwiftMarvelUITests;
+			sourceTree = "<group>";
+		};
+		A17ECFC22889A35000C2E303 /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				A17ECFC32889A35800C2E303 /* ListView */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		A17ECFC32889A35800C2E303 /* ListView */ = {
+			isa = PBXGroup;
+			children = (
+				A17ECFC72889A39A00C2E303 /* Model */,
+				A17ECFC52889A36800C2E303 /* ViewModel */,
+				A17ECFC42889A36200C2E303 /* View */,
+			);
+			path = ListView;
+			sourceTree = "<group>";
+		};
+		A17ECFC42889A36200C2E303 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A17ECFC82889A3D900C2E303 /* CharacterListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A17ECFC52889A36800C2E303 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A17ECFC62889A37000C2E303 /* DataSource */,
+				A17ECFCD2889AD0B00C2E303 /* CharacterListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A17ECFC62889A37000C2E303 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				A17ECFCF2889ADA900C2E303 /* CharacterListDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		A17ECFC72889A39A00C2E303 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A17ECFCA2889A3FB00C2E303 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A17ECFCB2889A41700C2E303 /* CommonViewController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		AE848483F54280BE435AA219 /* Frameworks */ = {
@@ -425,9 +493,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A17ECFC92889A3D900C2E303 /* CharacterListViewController.swift in Sources */,
 				A17ECF9628896A7300C2E303 /* ViewController.swift in Sources */,
+				A17ECFCC2889A41700C2E303 /* CommonViewController.swift in Sources */,
 				A17ECF9228896A7300C2E303 /* AppDelegate.swift in Sources */,
+				A17ECFCE2889AD0B00C2E303 /* CharacterListViewModel.swift in Sources */,
 				A17ECF9428896A7300C2E303 /* SceneDelegate.swift in Sources */,
+				A17ECFD02889ADA900C2E303 /* CharacterListDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
