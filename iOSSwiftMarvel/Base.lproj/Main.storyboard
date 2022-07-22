@@ -41,6 +41,7 @@
                     <navigationItem key="navigationItem" id="dzm-Df-pdP"/>
                     <connections>
                         <outlet property="listTableView" destination="vQd-Hj-Sgs" id="pOz-XO-0GS"/>
+                        <outlet property="titleLabel" destination="q4T-Ga-trM" id="bGC-5V-igD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jih-am-L6D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

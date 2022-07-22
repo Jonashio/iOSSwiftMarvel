@@ -10,6 +10,8 @@ import Foundation
 class CharacterListViewModel {
     
     func fetchData() {
-        
+        CharacterListDataSource().fetchListData(params: [:]) { response in
+            
+        }
     }
 }
