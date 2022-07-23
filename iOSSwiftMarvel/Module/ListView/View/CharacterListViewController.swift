@@ -2,6 +2,11 @@
 
 import UIKit
 
+protocol CharacterListProtocol {
+    func reloadList()
+    func errorRequest(msg: String)
+}
+
 class CharacterListViewController: CommonViewController {
     @IBOutlet weak var listTableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
@@ -58,12 +63,12 @@ extension CharacterListViewController: UITableViewDelegate, UITableViewDataSourc
     }
 }
 
-extension CharacterListViewController {
+extension CharacterListViewController: CharacterListProtocol {
     func reloadList() {
         listTableView.reloadData()
     }
 
-    func errorRequest() {
-        //TODO: Showing popup with error
+    func errorRequest(msg: String) {
+        showAlertView(title: "Wow!", messsage: msg)
     }
 }
