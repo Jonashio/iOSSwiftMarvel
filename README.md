@@ -1,4 +1,4 @@
-# Marvel iOS
+# Marvel iOS MVVM
 
 <p align="justify">
     <img src="https://app.bitrise.io/app/0b2a00965c933c81/status.svg?token=vO44BSZJTRvRCjmrMKyVfw" />
