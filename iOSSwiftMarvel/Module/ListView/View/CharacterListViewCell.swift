@@ -1,7 +1,7 @@
 import UIKit
 import Kingfisher
 
-class CharacterListViewCell: UITableViewCell, IdentifierProtocol {
+final class CharacterListViewCell: UITableViewCell, IdentifierProtocol {
     static var myClassName: String = "CharacterListViewCell"
 
     @IBOutlet weak var thumbnailImage: UIImageView!

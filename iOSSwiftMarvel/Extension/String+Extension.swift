@@ -8,15 +8,17 @@ extension String {
                                  value: self,
                                  comment: self)
     }
-    
+
     func removeLastIfCan(_ rest: Int) -> String {
-        var myself = self
-        
-        if self.count > rest {
-            let subtract = self.count - rest
-            myself.removeLast(subtract)
+        guard self.count > rest else {
+            return self
         }
-        
+
+        var myself = self
+        let subtract = self.count - rest
+
+        myself.removeLast(subtract)
+
         return myself
     }
 }

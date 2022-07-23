@@ -1,15 +1,15 @@
 import Foundation
 
-class CharacterListViewModel {
+final class CharacterListViewModel {
 
     weak var delegate: (CharacterListViewController & CommonViewProtocol)?
     var charactersModelList: [ResultModel] = []
-    var offset: Int?
+    private var offset: Int?
 
     func fetchData() {
         DispatchQueue.main.async { self.delegate?.startCustomActivity() }
-        let nextOffset = offset ?? 0
-        let params: Params = ["offset": "\(offset != nil ? nextOffset+1 : nextOffset)"]
+        let pageOffset = offset ?? 0
+        let params: Params = ["offset": "\(offset != nil ? pageOffset+1 : pageOffset)"]
 
         CharacterListDataSource().fetchListData(params: params) { response in
             switch response {

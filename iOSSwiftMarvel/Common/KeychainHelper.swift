@@ -12,21 +12,19 @@ enum KeychainType: String {
     case publicKey
 }
 
-class KeychainHelper {
+final class KeychainHelper {
 
     private struct Constants {
         static let server = "com.jonashioapps.iOSSwiftMarvel"
     }
-    
+
     static func savePrivateKey(value: String) throws -> Bool {
         return try KeychainHelper.save(type: .privateKey, value: value)
     }
-    
+
     static func savePublicKey(value: String) throws -> Bool {
         return try KeychainHelper.save(type: .publicKey, value: value)
     }
-    
-    
 
     static private func save(type: KeychainType, value: String) throws -> Bool {
         // Build query
@@ -102,7 +100,7 @@ class KeychainHelper {
         return value
     }
 
-    static func deleteToken() {
+    static func delete() {
         let spec: NSDictionary = [kSecClass: kSecClassInternetPassword]
         SecItemDelete(spec)
     }

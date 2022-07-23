@@ -5,7 +5,7 @@ import PKHUD
 protocol CommonViewProtocol {
     func startCustomActivity()
     func hiddenCustomActivity()
-    func showAlertView(title : String,messsage: String)
+    func showAlertView(title : String, messsage: String)
 }
 
 class CommonViewController: UIViewController, CommonViewProtocol {
@@ -22,9 +22,9 @@ class CommonViewController: UIViewController, CommonViewProtocol {
         HUD.hide()
     }
 
-    func showAlertView(title : String,messsage: String)  {
+    func showAlertView(title : String, messsage: String) {
         let alertController = UIAlertController(title: title, message: messsage, preferredStyle: UIAlertController.Style.alert)
-        let okAction = UIAlertAction(title: "Understood", style: UIAlertAction.Style.default) { (result : UIAlertAction) -> Void in
+        let okAction = UIAlertAction(title: "Understood".localized(), style: UIAlertAction.Style.default) { (result : UIAlertAction) -> Void in
         }
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)

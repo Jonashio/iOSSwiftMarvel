@@ -1,6 +1,6 @@
 import UIKit
 
-class CharactersDetailViewController: CommonViewController, IdentifierProtocol {
+final class CharactersDetailViewController: CommonViewController, IdentifierProtocol {
     static var myClassName: String = "CharactersDetailViewController"
 
     @IBOutlet weak var imageView: UIImageView!
