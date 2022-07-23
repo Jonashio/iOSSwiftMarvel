@@ -1,7 +1,6 @@
 # Marvel iOS MVVM
 
 <p align="justify">
-    <img src="https://app.bitrise.io/app/0b2a00965c933c81/status.svg?token=vO44BSZJTRvRCjmrMKyVfw" />
     <img src="https://img.shields.io/badge/Swift-5-orange.svg" />
     <img src="https://img.shields.io/badge/Platforms-iOS-blue.svg?style=flat" />
 </p>
