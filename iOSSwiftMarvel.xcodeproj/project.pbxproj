@@ -258,7 +258,6 @@
 		A17ECFC52889A36800C2E303 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A17ECFC62889A37000C2E303 /* DataSource */,
 				A17ECFCD2889AD0B00C2E303 /* CharacterListViewModel.swift */,
 			);
 			path = ViewModel;
@@ -275,6 +274,7 @@
 		A17ECFC72889A39A00C2E303 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A17ECFC62889A37000C2E303 /* DataSource */,
 				A17ECFDA2889C5DE00C2E303 /* CharactersListModels.swift */,
 			);
 			path = Model;
