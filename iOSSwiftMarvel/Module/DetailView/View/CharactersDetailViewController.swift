@@ -1,19 +1,24 @@
 //
-//  CharacterListViewCell.swift
+//  CharactersDetailViewController.swift
 //  iOSSwiftMarvel
 //
 //  Created by Jonashio on 23/7/22.
 //
 
 import UIKit
-import Kingfisher
 
-class CharacterListViewCell: UITableViewCell, IdentifierProtocol {
-    static var myClassName: String = "CharacterListViewCell"
+class CharactersDetailViewController: CommonViewController, IdentifierProtocol {
+    static var myClassName: String = "CharactersDetailViewController"
 
-    @IBOutlet weak var thumbnailImage: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        navigationController?.isNavigationBarHidden = true
+    }
 
     func setup(_ model: ResultModel) {
         nameLabel.text = model.name
@@ -31,7 +36,7 @@ class CharacterListViewCell: UITableViewCell, IdentifierProtocol {
         }
 
         if let url = URL(string: "\(pathImage).\(extImage)") {
-            thumbnailImage.kf.setImage(with: url)
+            imageView.kf.setImage(with: url)
         }
     }
 }
