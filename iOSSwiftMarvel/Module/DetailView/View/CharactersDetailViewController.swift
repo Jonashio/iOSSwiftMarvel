@@ -1,10 +1,3 @@
-//
-//  CharactersDetailViewController.swift
-//  iOSSwiftMarvel
-//
-//  Created by Jonashio on 23/7/22.
-//
-
 import UIKit
 
 class CharactersDetailViewController: CommonViewController, IdentifierProtocol {

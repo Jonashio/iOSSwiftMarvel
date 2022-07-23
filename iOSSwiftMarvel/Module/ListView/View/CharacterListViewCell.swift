@@ -1,10 +1,3 @@
-//
-//  CharacterListViewCell.swift
-//  iOSSwiftMarvel
-//
-//  Created by Jonashio on 23/7/22.
-//
-
 import UIKit
 import Kingfisher
 

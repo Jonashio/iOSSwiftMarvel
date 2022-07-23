@@ -31,7 +31,6 @@
 		A17ECFCC2889A41700C2E303 /* CommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFCB2889A41700C2E303 /* CommonViewController.swift */; };
 		A17ECFCE2889AD0B00C2E303 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFCD2889AD0B00C2E303 /* CharacterListViewModel.swift */; };
 		A17ECFD02889ADA900C2E303 /* CharacterListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFCF2889ADA900C2E303 /* CharacterListDataSource.swift */; };
-		A17ECFD22889AF9A00C2E303 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFD12889AF9A00C2E303 /* Singleton.swift */; };
 		A17ECFD42889B32600C2E303 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFD32889B32600C2E303 /* NetworkResponse.swift */; };
 		A17ECFD72889BAB200C2E303 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFD62889BAB200C2E303 /* URLRequest+Extension.swift */; };
 		A17ECFD92889BF4500C2E303 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17ECFD82889BF4500C2E303 /* KeychainHelper.swift */; };
@@ -94,7 +93,6 @@
 		A17ECFCB2889A41700C2E303 /* CommonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonViewController.swift; sourceTree = "<group>"; };
 		A17ECFCD2889AD0B00C2E303 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
 		A17ECFCF2889ADA900C2E303 /* CharacterListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListDataSource.swift; sourceTree = "<group>"; };
-		A17ECFD12889AF9A00C2E303 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
 		A17ECFD32889B32600C2E303 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		A17ECFD62889BAB200C2E303 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
 		A17ECFD82889BF4500C2E303 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
@@ -292,7 +290,6 @@
 			children = (
 				A1173986288B028D00D121B6 /* CodingKeyPath */,
 				A17ECFCB2889A41700C2E303 /* CommonViewController.swift */,
-				A17ECFD12889AF9A00C2E303 /* Singleton.swift */,
 				A17ECFD32889B32600C2E303 /* NetworkResponse.swift */,
 				A17ECFD82889BF4500C2E303 /* KeychainHelper.swift */,
 			);
@@ -598,7 +595,6 @@
 				A17ECFD72889BAB200C2E303 /* URLRequest+Extension.swift in Sources */,
 				A17ECFD42889B32600C2E303 /* NetworkResponse.swift in Sources */,
 				A117398E288BFEFA00D121B6 /* CharacterListViewCell.swift in Sources */,
-				A17ECFD22889AF9A00C2E303 /* Singleton.swift in Sources */,
 				A17ECFDB2889C5DE00C2E303 /* CharactersListModels.swift in Sources */,
 				A17ECF9428896A7300C2E303 /* SceneDelegate.swift in Sources */,
 				A17ECFD02889ADA900C2E303 /* CharacterListDataSource.swift in Sources */,
