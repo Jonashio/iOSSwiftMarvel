@@ -80,8 +80,8 @@ struct Thumbnail: Codable {
 }
 
 enum Extension: String, Codable {
-    case gif = "gif"
-    case jpg = "jpg"
+    case gif
+    case jpg
 }
 
 // MARK: - URLElement
@@ -91,8 +91,7 @@ struct URLElement: Codable {
 }
 
 enum URLType: String, Codable {
-    case comiclink = "comiclink"
-    case detail = "detail"
-    case wiki = "wiki"
+    case comiclink
+    case detail
+    case wiki
 }
-
